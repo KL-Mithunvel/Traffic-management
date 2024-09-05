@@ -1,12 +1,27 @@
 class Vehicles:
-    def __init__(self,spawn ,home ,spd):
+    def __init__(self, V_type, spawn, home, spd):
         #place of birth
         self.spawn = spawn
         #place of death
         self.home = home
         self.speed = spd
 
-
-
     def move(self):
+        #movement logic with respect to gui
 
+        pass
+
+
+class Car(Vehicles):
+    def __init__(self):
+        super().__init__("car",spawn, home, spd)
+
+
+class Bike(Vehicles):
+    def __init__(self):
+        super().__init__("bike",spawn, home, spd)
+
+
+class Bus(Vehicles):
+    def __init__(self):
+        super().__init__("bus",spawn, home, spd)
