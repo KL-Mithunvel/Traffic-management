@@ -4,7 +4,7 @@ Background: Urban areas often face significant traffic congestion, especially at
 
 
 
-To install all required libraries:
+#To install all required libraries:
 1. Create a venv in your project folder using python -m venv c:\path\to\project
 2. Activate the venv using :
 3. cd c:\path\to\project
