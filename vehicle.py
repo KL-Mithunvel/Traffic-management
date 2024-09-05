@@ -10,4 +10,3 @@ class Vehicles:
 
     def move(self):
 
-class car:
