@@ -16,15 +16,16 @@ class Vehicles:
 
 
 class Car(Vehicles):
-    def __init__(self):
+    def __init__(self,spawn, home, spd):
         super().__init__("car",spawn, home, spd)
 
 
+
 class Bike(Vehicles):
-    def __init__(self):
+    def __init__(self,spawn, home, spd):
         super().__init__("bike",spawn, home, spd)
 
 
 class Bus(Vehicles):
-    def __init__(self):
+    def __init__(self,spawn, home, spd):
         super().__init__("bus",spawn, home, spd)
