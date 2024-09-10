@@ -763,7 +763,6 @@ def repeat():
         currentGreen].green  # set the red time of next to next signal as (yellow time + green time) of next signal
     repeat()
 
-
 # Update values of the signal timers after every second
 def updateValues():
     for i in range(0, noOfSignals):
