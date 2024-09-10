@@ -1,7 +1,6 @@
 class road:
-    def __init__(self, length):
+    def __init__(self,name, length):
         self.length=length
-        self.road_pos = [[] for i in range(self.length)]
+        self.road_pos =
 
-    def V_spawn (self,vehicle):
-        self.road_pos .append()
+
