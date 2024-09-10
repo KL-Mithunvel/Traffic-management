@@ -19,9 +19,9 @@ speeds = {'car': 2.25, 'bus': 1.8, 'truck': 1.8, 'bike': 2.5}  # average speeds 
 
 # Coordinates of vehicles' start
 x = {'right': [0, 0, 0], 'down': [300, 285, 265], 'left': [1400, 1400, 1400], 'up': [212, 219, 239],
-     'down1': [1070, 1055, 1035], 'up1': [612, 619, 639], 'up2': [812, 819, 839], 'left1': [1400, 1400, 1400]}
+     'down1': [1070, 1055, 1035], 'up1': [577, 584, 604], 'up2': [979, 986, 1006], 'left1': [1400, 1400, 1400]}
 y = {'right': [158, 170, 190], 'down': [0, 0, 0], 'left': [258, 238, 218], 'up': [800, 800, 800], 'down1': [0, 0, 0],
-     'up1': [800, 800, 800], 'up2': [800, 800, 800], 'left1': [658, 638, 618]}
+     'up1': [800, 800, 800], 'up2': [800, 800, 800], 'left1': [608, 588, 568]}
 # Add new directions and coordinates
 
 
@@ -37,8 +37,8 @@ signalCoods = [(180, 40), (550, 40), (550, 420), (180, 420)]
 signalTimerCoods = [(160, 40), (530, 40), (530, 420), (160, 420)]
 
 # Coordinates of stop lines
-stopLines = {'right': 210, 'down': 170, 'left': 1060, 'up': 247, 'down1': 170, 'up1': 760, 'up2': 760, 'left1': 1060}
-defaultStop = {'right': 200, 'down': 160, 'left': 1070, 'up': 257, 'down1': 160, 'up1': 770, 'up2': 770, 'left1': 1070}
+stopLines = {'right': 210, 'down': 170, 'left': 1080, 'up': 247, 'down1': 170, 'up1': 580, 'up2': 590, 'left1': 1080}
+defaultStop = {'right': 200, 'down': 160, 'left': 1090, 'up': 257, 'down1': 160, 'up1': 600, 'up2': 610, 'left1': 1090}
 
 stoppingGap = 15  # stopping gap
 movingGap = 15  # moving gap
@@ -877,6 +877,7 @@ class Main:
                     signals[i].signalText = "---"
                 screen.blit(redSignal, signalCoods[i])
         signalTexts = ["", "", "", ""]
+
 
         # display signal timer
         for i in range(0, noOfSignals):
